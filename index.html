@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Junaid - A developer </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="fav.ico">
   <link href="https://fonts.googleapis.com/css?family=Economica|Sacramento|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -16,14 +19,13 @@
     <h1>Welcome</h1>
     <h1>Junaid says Hi</h1>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-image">
-    <img src="images/mountain.png" alt="mountain-image" >
+    <img src="images/profile-pics.jpg" class="profile-pic"  alt="junaid-image" >
   </div>
 
   <div class="middle-container">
     <div class="profile">
-      <img class="profile-pic" src="images/profile-pics.jpg" alt="profile-pics">
-      <h2>Hello</h2>
-      <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>About</h2>
+      <p class="bio">OND, BSc. Electrical & Electronic Engineering  Arduino/Embedded C++ Programmer | Front-End Developer</p>
     </div>
     <hr>
     <div class="skills">
@@ -31,30 +33,73 @@
       <div class="skill-row">
         <img class="float-image-left" src="images/dev.png" alt="img-1">
         <h3>Coding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>
+          Less than five months experience in Web development. Substantial understanding of the basic web-starter-kits ( HTML, CSS, JavaScript).
+          I have worked with the jQuery JavaScript library for building an <a href="www.github.com/Easytobeh/Online-Housing"> Online House Rental Website</a>
+          yet to be completed. I used a mock server, json server for accessing my database via AJAX CRUD methods. <br/> I possess firm understanding of 
+          git Version Control tool and familiar with most of the neccessary commands for tracking projects on Github.
+        </p>
       </div>
       <div class="skill-row ">
         <img class="float-image-right" src="images/electronics.jpg" alt="img-2">
         <h3>Electronic Circuit Design</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>This right here is my Niche. Talk of Electronic circuits design and construction, I am all for it. Albeit, not for commercial purposes, at least none
+          I can think of, but mostly for exhibition and assistance for student's project. I am familiar with Electronic Computer Aided Design (ECAD) such as
+           <a href="#">EAGLE,</a><a href="#">Proteus and,</a><a href="#">Fritzing</a>for circuit simulation and making Printed Circuit Boards(PCB).
+        </p>
       </div>
       <div class="skill-row">
         <img class="float-image-left" src="images/arduino.jpg" alt="img-1">
         <h3>Arduino Programming</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
       </div>
     </div>
     <hr>
     <div class="contact-me">
       <h2>Get in Touch</h2>
-      <p class="contact-message">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <a class="btn" href="mailto:easytobeh@gmail.com">Contact Me</a>
+      <p class="contact-message">If you are fascinated by this Portfolio and would like to know more about this awesome personality, feel free to contact me
+        I'd do well to respond ASAP.
+      </p>
+      <a class="btn" href="#my-modal" data-toggle="modal" class="nav-item nav-link">Contact Me</a>
+    </div>
+  </div>
+  <!-- Modal HTML -->
+  <div id="my-modal" class="modal fade">
+    <div class="modal-dialog modal-login">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/user-avatar.jpg" style="width: 30%;" alt="User">
+          <p>
+            <h4 class="modal-title">User Login</h4>
+          </p>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <i class="fa fa-user"></i>
+              <input type="text" class="form-control" id="user" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+              <i class="fa fa-lock"></i>
+              <input type="password" class="form-control" id="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary btn-block btn-lg" id="login" value="Login">
+            </div>
+            <div class="modal-footer">
+              <a id="signup" href="signup.html">New User Signup</a>
+            </div>
+          </form>
+  
+        </div>
+      </div>
     </div>
   </div>
 
   <div class="bottom-container">
     <strong>
-    <a class="footer-link" href="https://twitter.com/Eazytoby">Twitter</a>
+    <a class="footer-link" href="https://twitter.com/junaydcodes">Twitter</a>
     <a class="footer-link" href="https://www.linkedin.com/in/oloruntobi-junaid-266b26141/">LinkedIn</a>
     <a class="footer-link" href="https://github.com/Easytobeh">GitHub</a>
   </strong>
