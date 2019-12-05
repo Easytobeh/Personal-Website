@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Junaid - A developer </title>
+  <title>Junaid - Portfolio Page </title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,21 +19,56 @@
 </head>
 
 <body>
+<!-----------------------------------------NAVBAR------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" >Junaid Oloruntobi</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a  href="#my-modal" data-toggle="modal" class="nav-item nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="gallery" href="#">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/files/JUNAID_OLORUNTOBI_CV.pdf" download="Junaid- Curriculum Vitae">My CV</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          My Skills
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#coding">Coding</a>
+          <a class="dropdown-item" href="#circuit">Elecronic Circuits Design</a>
+          <a class="dropdown-item" href="#hardware">Hardware Programming</a>
+          <a class="dropdown-item" href="#solar">Solar Power Solutions</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!----------------------------------------END NAVBAR------------------------------------- -->
   <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-image">
     <h1>The famous cliche that:</h1>
     <h1>"A Jack of all trade is a master of none" But the caveat is:<br>
-        "Often times he is better than a master of one" -Junaid Oloruntobi
-        <i class="em em-face_with_hand_over_mouth" aria-role="presentation"
-          aria-label="SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH"></i>
+        "quite often he is better than a master of one" -Junaid Oloruntobi
     </h1>
    
-    <img src="images/profile-pics.jpg" class="profile-pic" alt="junaid-image">
+    <img src="images/profile-pictures.jpg" class="profile-pic" alt="junaid-image">
   </div>
 
   <div class="middle-container">
     <div class="profile">
-      <h2>About</h2>
+      <h2 id="about">About</h2>
       <p class="bio">OND, BSc. Electrical & Electronic Engineering Solar Power Engineer | Embedded Software Programmer -
         Arduino/C++ Stack | Aspiring Full Stack Developer</p>
     </div>
@@ -42,9 +77,9 @@
       <h2>My Skills</h2>
       <div class="skill-row">
         <img class="float-image-left" src="images/dev.png" alt="img-1">
-        <h3>Coding</h3>
+        <h3 id="coding">Coding</h3>
         <p>
-          Less than five months experience in Web development. Substantial understanding of the basic web-starter-kits
+          Barely few months experience in Web development. Substantial understanding of the basic web-starter-kits
           (HTML, CSS, JavaScript).
           I have worked with the jQuery JavaScript library for building an <a
             href="www.github.com/Easytobeh/Online-Housing"> Online House Rental Website</a>
@@ -56,18 +91,18 @@
       </div>
       <div class="skill-row ">
         <img class="float-image-right" src="images/electronics.jpg" alt="img-2">
-        <h3>Electronic Circuit Design</h3>
+        <h3 id="circuit">Electronic Circuit Design</h3>
         <p>This right here is my Niche. Speak of Electronic circuits design and construction, I am all for it. Albeit,
           not for commercial purposes, at least majority of past work, but mostly as a freelancer for
           exhibition purposes and assistance on student's project. I am familiar with Electronic Computer Aided Design
           (ECAD) such as
-          <a href="#">EAGLE,</a><a href="#">Proteus and,</a><a href="#">Fritzing</a>for circuit simulation and making
+          <a href="https://www.autodesk.com/products/eagle/overview">EAGLE design software,</a><a href="https://www.labcenter.com">Proteus and,</a><a href="https://fritzing.org/home/">Fritzing</a>for circuit simulation and making
           Printed Circuit Boards(PCB).
         </p>
       </div>
       <div class="skill-row">
         <img class="float-image-left" src="images/arduino.jpg" alt="img-3">
-        <h3>Hardware Programming</h3>
+        <h3 id="hardware">Hardware Programming</h3>
         <p>Over Five (5) years of experience in Embedded Software - integrating software into hardware. Basically
           programming microcontrollers specifically ATMEL's ATmega328, Atmega16 AVR Microcontrollers and Attiny 4X
           Series.
@@ -111,7 +146,7 @@
     </div>
     <div class="skill-row">
       <img class="float-image-left" src="images/solar-avatar.jpg" alt="img-4">
-      <h3>Solar Power Solutions</h3>
+      <h3 id="solar">Solar Power Solutions</h3>
       <p>A vast knowledge of alternative Uninterruptible Power Solutions design and installation. I have engaged in the Installation of
         a 7.2kW Solar capacity with 15kVA Inverter at four different client locations. The highest capacity for domestic use
          I have been involved in. If you are a fan of sustainable Energy and would love to invest in a clean, reliable, environment-friendly
@@ -123,19 +158,20 @@
   </div>
   <hr>
   <div class="contact-me">
-    <h2>Get in Touch</h2>
+    <h2 id="contact">Get in Touch</h2>
     <p class="contact-message">If you are fascinated by my Portfolio and would like to know more about this awesome
-      personality, or
+      personality <i class="em em-face_with_hand_over_mouth" aria-role="presentation"
+        aria-label="SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH"></i>, or
       you have a business for me, feel free to contact me using the button below. Trust me, you wouldn't be dissapointed. Use the
       button below. My Reach is a click away.
       I'd do well to respond ASAP.
     </p>
     <a class="btn" href="#my-modal" data-toggle="modal" class="nav-item nav-link">Contact Me</a>
-  </div>
-  </div>
+   </div>
+   </div>
 
-  <!-- Modal HTML -->
-  <div id="my-modal" class="modal fade">
+   <!-- Modal HTML -->
+   <div id="my-modal" class="modal fade">
     <div class="modal-dialog modal-login">
       <div class="modal-content">
         <div class="modal-header">
@@ -186,6 +222,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="script.js" ></script>
 
 </body>
 
