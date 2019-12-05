@@ -12,13 +12,13 @@ a{
 }
 
 a:hover{
-  color: #EAF6F6;
+  color: rgb(27, 6, 71);
   font-family: monospace;
   text-decoration: none;
 }
 
 h1{
-  color: #66BFBF;
+  color: #000;
   margin: 0;
   font-family: 'Sacramento', cursive;
   font-size: 3.125rem;
@@ -43,7 +43,7 @@ hr{
   border-top: none;
 }
 
-p{
+p, ul{
   font-family: 'Economica', sans-serif;
   line-height: 2;
 }
@@ -242,9 +242,6 @@ padding-top: 100px;
 		
 	 }
 
-	#signup-form input{
-	margin-left: 0 ;
-	}
 
 
  
