@@ -149,6 +149,7 @@ p, ul{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 /* background-color: #E4F9F5; */
 position: relative;
 padding-top: 100px;
