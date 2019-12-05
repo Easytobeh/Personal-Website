@@ -1,2 +1,2 @@
 # Personal-Website
-You want to know me? Dive in and take a peek
+You want to know me? Dive in and take a sneak-peek
