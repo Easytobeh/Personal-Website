@@ -109,9 +109,6 @@ p, ul{
 
 .float-image-left{
   width: 25%;
-  border-radius: 50%;
-  border: solid 10px #E4F9F5;
-  float: left;
   margin-right: 30px;
 }
 
